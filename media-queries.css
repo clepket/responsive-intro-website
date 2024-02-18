@@ -1,0 +1,20 @@
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: var(--font-body-mobile, 1.2rem);
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+  
+  #mobile-nav {
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--white, #ececec);
+    position: sticky;
+    top: 0;
+    z-index: 10; */
+  }
+}
