@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --light-green: #8b9b7e;
+  --dark-green: #45553c;
+  --yellow: #e0bb76;
+  --orange: #ee892f;
+  --white: #ececec;
+  --black: #2d2c2a;
+
+  /* Large desktop font size */
+  --font-body-large: 1.8rem;
+  --font-header-large: 3.5rem;
+  --font-subheader-large: 3rem;
+  --font-input-large: 1.6rem;
+
+  /* Small desktop font size */
+  --font-body-small: 1.5rem;
+  --font-header-small: 3rem;
+  --font-subheader-small: 2.5rem;
+  --font-input-small: 1.2rem;
+
+  /* Mobile font size */
+  --font-body-mobile: 1.2rem;
+  --font-header-mobile: 2rem;
+  --font-subheader-mobile: 1.6rem;
+  --font-input-mobile: 1rem;
+
+  /* Font family */
+  --font-family-body: "Poppins", sans-serif;
+  --font-family-header: "Poppins", sans-serif;
+  --font-family-subheader: "Poppins", sans-serif;
+  --font-family-input: "Poppins", sans-serif;
+
+  /* Font weight */
+  --font-weight-body: 400;
+  --font-weight-header: 600;
+  --font-weight-subheader: 500;
+  --font-weight-input: 300;
+}
+
+/* GENERAL */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--white, #ececec);
+  font-family: var(--font-family-body, "sans-serif");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  color: var(--dark-green, #45553c);
+  font-weight: var(--font-weight-header, 600);
+}
+
+h4 {
+  color: var(--light-green, #8b9b7e);
+  font-weight: var(--font-weight-subheader, 500);
+}
+
+p {
+  color: var(--black, #2d2c2a);
+  font-weight: var(--font-weight-body, 400);
+}
+
+input {
+  font-weight: var(--font-weight-input, 300);
+}
+
+/* TRANSITION */
+a,
+.btn {
+  transition: all 0.3s ease;
+}
+
+/* DESKTOP NAV */
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+  background-color: var(--white, #ececec);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: var(--font-body-small, 1.5rem);
+}
+
+.nav-links a {
+  color: var(--light-green, #8b9b7e);
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: var(--dark-green, #45553c);
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
+}
+
+.logo {
+  color: var(--dark-green, #45553c);
+  font-size: 1.5rem;
+  pointer-events: none;
+}
