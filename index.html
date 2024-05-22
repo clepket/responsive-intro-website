@@ -9,18 +9,19 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">Andreia Barbosa</div>
+      <div class="logo"><a href="#about">Andreia Barbosa</a></div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">Sobre</a></li>
-          <li><a href="#services">Serviços</a></li>
+          <li><a href="#recipes">Receitas</a></li>
           <li><a href="#scheduling">Marcações</a></li>
           <li><a href="#contact">Contato</a></li>
+          <li><button class="btn btn-primary">Agendar Consulta</button></li>
         </ul>
       </div>
     </nav>
     <nav id="mobile-nav">
-      <div class="logo">Andreia Barbosa</div>
+      <div class="logo"><a href="#about">Andreia Barbosa</a></div>
       <div class="mobile-menu">
         <div class="mobile-icon" onclick="toggleMenu()">
           <span></span>
@@ -29,12 +30,55 @@
         </div>
         <div class="menu-links">
           <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
-          <li><a href="#services" onclick="toggleMenu()">Serviços</a></li>
+          <li><a href="#recipes" onclick="toggleMenu()">Receitas</a></li>
           <li><a href="#scheduling" onclick="toggleMenu()">Marcações</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
         </div>
       </div>
     </nav>
     <script src="script.js"></script>
+    <section id="about">
+      <div class="profile__pic">
+        <img src="./assets/profile-photo.jpg" alt="Andreia Barbosa" />
+      </div>
+      <div class="profile__presentation">
+        <div class="profile__presentation__title">
+          <h2>Frase bonita sobre nutrição e tal</h2>
+        </div>
+        <div class="profile__presentation__text">
+          <p>
+            Sou nutricionista e trabalho com aconselhamento nutricional, com
+            foco em alimentação saudável e equilibrada. Acredito que a
+            alimentação é a base para uma vida saudável e equilibrada.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="recipes">
+      <div class="recipes-container">
+        <div class="recipes__info">
+          <h4>Receitas gostosas</h4>
+        </div>
+        <div class="recipes__gallery-container">
+          <div class="recipes__gallery">
+            <article class="recipes__gallery-card">
+              <figure>
+                <img src="./assets/recipe-1.png" alt="" />
+              </figure>
+            </article>
+            <article class="recipes__gallery-card">
+              <figure>
+                <img src="./assets/recipe-2.png" alt="" />
+              </figure>
+            </article>
+            <article class="recipes__gallery-card">
+              <figure>
+                <img src="./assets/recipe-3.png" alt="" />
+              </figure>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
